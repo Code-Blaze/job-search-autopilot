@@ -87,8 +87,8 @@ counts as Onsite):
 
 ```json
 "alternate_regions": [
-  {"id": "ncr", "name": "Delhi NCR", "match": ["delhi", "gurgaon", "noida"]},
-  {"id": "blr", "name": "Bengaluru", "match": ["bengaluru", "bangalore"]}
+  {"id": "pune", "name": "Pune", "match": ["pune"]},
+  {"id": "hyd", "name": "Hyderabad", "match": ["hyderabad"]}
 ]
 ```
 

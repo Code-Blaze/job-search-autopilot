@@ -28,7 +28,7 @@ On Windows, type `py` where these commands say `python3`.
 
 - `[fetch] budget: today's allowance $0.26`: how much it will spend today.
 - `[fetch] linkedin/x: skipped to stay on budget`: waits for a later day (most-waiting first).
-- `[fetch] linkedin/x: Bengaluru search, runs on Bengaluru days`: an `alternate_regions` off-day.
+- `[fetch] linkedin/x: Hyderabad search, runs on Hyderabad days`: an `alternate_regions` off-day.
 - `[classify] dropped: {...}`: why jobs were filtered out. The common ones:
 
 | Reason | Meaning / what to change in profile.json |

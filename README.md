@@ -79,7 +79,7 @@ It lists the examples. Pick the closest one; you'll change it to fit you:
 
 | Example | For |
 |---|---|
-| `cybersecurity-india` | SOC / AppSec / DevSecOps roles in Delhi NCR and Bengaluru, India, using LinkedIn, Indeed and Naukri |
+| `cybersecurity-india` | SOC / AppSec / DevSecOps roles in Pune and Hyderabad, India, using LinkedIn, Indeed and Naukri |
 | `software-engineer-usa` | Frontend / full-stack roles in Austin and Seattle, USA, using LinkedIn and Indeed |
 
 Setup copies the example into `config/` and creates `secrets.env`. Nothing in `config/` or
@@ -167,7 +167,7 @@ into the Notes column, for interview prep. Without a key, the free rule-based re
 - **Cheap searches** (Naukri, under $0.01) run every day. **LinkedIn/Indeed** searches (~$0.10 each)
   take turns, the longest-waiting first. With $5/month that's about 1–2 of them a day.
 - **Several cities?** List them under `alternate_regions` in `profile.json` and each city's paid
-  searches run on its own days (e.g. even dates Delhi, odd dates Bengaluru), so each city is
+  searches run on its own days (e.g. even dates Pune, odd dates Hyderabad), so each city is
   covered every other day instead of one city crowding out the other.
 - You can add backup tokens (`APIFY_TOKEN_2`, ...) from other Apify accounts; they're used when
   the first runs out. Please follow Apify's terms when doing this.

@@ -416,7 +416,7 @@ def norm_naukri(it):
     desc = re.sub(r"<[^>]+>", " ", s(g(it, "jobDescription")))
     r["job_title"] = s(g(it, "title"))
     r["company"] = s(g(it, "companyName"))
-    r["location"] = s(g(it, "location"))          # e.g. "Noida", "Hybrid - Gurugram, Bengaluru"
+    r["location"] = s(g(it, "location"))          # e.g. "Pune", "Hybrid - Pune, Hyderabad"
     r["_et_raw"] = s(g(it, "jobType", "employmentType"))
     r["_level"] = ""
     r["_wa_raw"] = r["location"]

@@ -67,8 +67,8 @@
     "country_names": ["india", "bharat"],
     "country_codes": ["in"],
     "country_places": [
-      "noida", "delhi", "gurgaon", "gurugram", "ghaziabad", "faridabad", "ncr", "bangalore", "bengaluru",
-      "mumbai", "navi mumbai", "thane", "pune", "hyderabad", "secunderabad", "chennai", "kolkata",
+      "pune", "pimpri-chinchwad", "hinjewadi", "hyderabad", "gachibowli", "hitec city", "cyberabad",
+      "delhi", "gurgaon", "gurugram", "noida", "ncr", "bangalore", "bengaluru", "mumbai", "navi mumbai", "thane", "secunderabad", "chennai", "kolkata",
       "ahmedabad", "gandhinagar", "jaipur", "chandigarh", "mohali", "lucknow", "indore", "bhopal",
       "kochi", "cochin", "thiruvananthapuram", "trivandrum", "coimbatore", "mysore", "mysuru", "nagpur",
       "vadodara", "surat", "bhubaneswar", "visakhapatnam", "vizag", "dehradun", "ranchi", "patna",
@@ -76,15 +76,15 @@
       "haryana", "kerala", "gujarat", "west bengal", "rajasthan"
     ],
     "remote_location_words": ["remote", "anywhere", "worldwide", "global", "asia"],
-    "onsite_cities": ["noida", "greater noida", "delhi", "new delhi", "gurgaon", "gurugram", "bengaluru", "bangalore"],
+    "onsite_cities": ["pune", "hinjewadi", "hyderabad"],
     "hybrid_cities": [
-      "delhi", "new delhi", "ncr", "noida", "greater noida", "gurgaon", "gurugram", "ghaziabad",
-      "faridabad", "manesar", "sonipat", "sonepat", "bahadurgarh", "bengaluru", "bangalore"
+      "pune", "pimpri-chinchwad", "hinjewadi", "kharadi", "magarpatta",
+      "hyderabad", "secunderabad", "gachibowli", "hitec city", "madhapur", "cyberabad"
     ],
-    "priority_cities": ["noida", "greater noida"],
+    "priority_cities": ["pune", "hinjewadi"],
     "alternate_regions": [
-      {"id": "ncr", "name": "Delhi NCR", "match": ["delhi", "gurgaon", "gurugram", "noida", "ncr"]},
-      {"id": "blr", "name": "Bengaluru", "match": ["bengaluru", "bangalore"]}
+      {"id": "pune", "name": "Pune", "match": ["pune"]},
+      {"id": "hyd", "name": "Hyderabad", "match": ["hyderabad"]}
     ]
   },
 

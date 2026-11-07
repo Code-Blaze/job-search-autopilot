@@ -7,7 +7,7 @@
     "default": "Cybersecurity Analyst | Security Operations & Application Security"
   },
   "contact": [
-    {"text": "Noida, India"},
+    {"text": "Pune, India"},
     {"text": "+91 90000 00000", "url": "tel:+919000000000"},
     {"text": "you@example.com", "url": "mailto:you@example.com"},
     {"text": "linkedin.com/in/your-profile", "url": "https://www.linkedin.com/in/your-profile"},
@@ -17,7 +17,7 @@
     {
       "title": "SOC Analyst Intern",
       "org": "Example Security Pvt Ltd",
-      "location": "Noida",
+      "location": "Pune",
       "dates": "Jan 2025 - Jun 2025",
       "bullets": [
         "Monitored and triaged 40+ SIEM alerts per shift in Splunk, escalating confirmed incidents with documented evidence.",

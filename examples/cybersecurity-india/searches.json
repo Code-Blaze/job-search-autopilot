@@ -7,9 +7,9 @@
     "_help": "~$0.10 per search (20 jobs). location is a LinkedIn location name. timePostedRange is in seconds. The job-type/seniority/workplace flags are not always reliable; the classifier filters anyway.",
     "runs": [
       {
-        "_label": "soc",
+        "_label": "soc-pune",
         "query": "SOC Analyst",
-        "location": "New Delhi, Delhi, India",
+        "location": "Pune, Maharashtra, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -21,9 +21,9 @@
         "onSite": true
       },
       {
-        "_label": "cyberanalyst",
+        "_label": "cyberanalyst-pune",
         "query": "Cyber Security Analyst",
-        "location": "New Delhi, Delhi, India",
+        "location": "Pune, Maharashtra, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -36,9 +36,9 @@
         "_enabled": false
       },
       {
-        "_label": "appsec",
+        "_label": "appsec-pune",
         "query": "Application Security Engineer",
-        "location": "New Delhi, Delhi, India",
+        "location": "Pune, Maharashtra, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -50,10 +50,10 @@
         "onSite": true
       },
       {
-        "_label": "cloudsec",
+        "_label": "cloudsec-pune",
         "_enabled": false,
         "query": "Cloud Security Engineer",
-        "location": "New Delhi, Delhi, India",
+        "location": "Pune, Maharashtra, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -124,9 +124,9 @@
         "onSite": false
       },
       {
-        "_label": "soc-blr",
+        "_label": "soc-hyd",
         "query": "SOC Analyst",
-        "location": "Bengaluru, Karnataka, India",
+        "location": "Hyderabad, Telangana, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -138,9 +138,9 @@
         "onSite": true
       },
       {
-        "_label": "appsec-blr",
+        "_label": "appsec-hyd",
         "query": "Application Security Engineer",
-        "location": "Bengaluru, Karnataka, India",
+        "location": "Hyderabad, Telangana, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -152,9 +152,9 @@
         "onSite": true
       },
       {
-        "_label": "devops",
+        "_label": "devops-pune",
         "query": "DevOps Engineer",
-        "location": "New Delhi, Delhi, India",
+        "location": "Pune, Maharashtra, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -166,9 +166,9 @@
         "onSite": true
       },
       {
-        "_label": "devops-blr",
+        "_label": "devops-hyd",
         "query": "DevOps Engineer",
-        "location": "Bengaluru, Karnataka, India",
+        "location": "Hyderabad, Telangana, India",
         "timePostedRange": "259200",
         "jobsToFetch": 20,
         "fullTime": true,
@@ -188,10 +188,10 @@
     "_help": "~$0.10 per search. country is a 2-letter code; location is a city/region; radius in km (or miles in the US).",
     "runs": [
       {
-        "_label": "soc",
+        "_label": "soc-pune",
         "_enabled": false,
         "country": "in",
-        "location": "Delhi, Delhi",
+        "location": "Pune, Maharashtra",
         "radius": "50",
         "query": "SOC Analyst",
         "sort": "date",
@@ -199,9 +199,9 @@
         "maxRows": 20
       },
       {
-        "_label": "cyberanalyst",
+        "_label": "cyberanalyst-pune",
         "country": "in",
-        "location": "Delhi, Delhi",
+        "location": "Pune, Maharashtra",
         "radius": "50",
         "query": "Cyber Security Analyst",
         "sort": "date",
@@ -209,10 +209,10 @@
         "maxRows": 20
       },
       {
-        "_label": "appsec",
+        "_label": "appsec-pune",
         "_enabled": false,
         "country": "in",
-        "location": "Delhi, Delhi",
+        "location": "Pune, Maharashtra",
         "radius": "50",
         "query": "Application Security Engineer",
         "sort": "date",
@@ -220,10 +220,10 @@
         "maxRows": 20
       },
       {
-        "_label": "cloudsec",
+        "_label": "cloudsec-pune",
         "_enabled": false,
         "country": "in",
-        "location": "Delhi, Delhi",
+        "location": "Pune, Maharashtra",
         "radius": "50",
         "query": "Cloud Security Engineer",
         "sort": "date",
@@ -274,9 +274,9 @@
         "maxRows": 20
       },
       {
-        "_label": "cyberanalyst-blr",
+        "_label": "cyberanalyst-hyd",
         "country": "in",
-        "location": "Bengaluru, Karnataka",
+        "location": "Hyderabad, Telangana",
         "radius": "50",
         "query": "Cyber Security Analyst",
         "sort": "date",
@@ -284,9 +284,9 @@
         "maxRows": 20
       },
       {
-        "_label": "devops",
+        "_label": "devops-pune",
         "country": "in",
-        "location": "Delhi, Delhi",
+        "location": "Pune, Maharashtra",
         "radius": "50",
         "query": "DevOps Engineer",
         "sort": "date",
@@ -294,9 +294,9 @@
         "maxRows": 20
       },
       {
-        "_label": "devops-blr",
+        "_label": "devops-hyd",
         "country": "in",
-        "location": "Bengaluru, Karnataka",
+        "location": "Hyderabad, Telangana",
         "radius": "50",
         "query": "DevOps Engineer",
         "sort": "date",
@@ -310,19 +310,12 @@
     "_enabled": true,
     "_cost_usd": 0.006,
     "_always_run": true,
-    "_help": "India only. Very cheap (billed per job returned, ~$0.0015/job), so it runs every day (_always_run). maxJobs must be at least 50. experience = years you have. City ids: 220 Noida, 350 Greater Noida, 6 Delhi, 73 Gurgaon, 97 Bengaluru (find others in the actor's input page on Apify).",
+    "_help": "India only. Very cheap (billed per job returned, ~$0.0015/job), so it runs every day (_always_run). maxJobs must be at least 50. experience = years you have. Without \"cities\" it searches all of India and the city rules in profile.json do the filtering. To search only your cities, add \"cities\": [\"<id>\", ...] using Naukri's numeric city ids (shown in the actor's input form on Apify).",
     "runs": [
       {
         "_label": "cyber",
         "jobBoard": "naukri",
         "keyword": "cyber security",
-        "cities": [
-          "220",
-          "350",
-          "6",
-          "73",
-          "97"
-        ],
         "experience": "2",
         "freshness": "3",
         "sortBy": "date",
@@ -333,13 +326,6 @@
         "_label": "soc",
         "jobBoard": "naukri",
         "keyword": "soc analyst",
-        "cities": [
-          "220",
-          "350",
-          "6",
-          "73",
-          "97"
-        ],
         "experience": "2",
         "freshness": "3",
         "sortBy": "date",
@@ -363,13 +349,6 @@
         "_label": "appsec",
         "jobBoard": "naukri",
         "keyword": "application security",
-        "cities": [
-          "220",
-          "350",
-          "6",
-          "73",
-          "97"
-        ],
         "experience": "2",
         "freshness": "3",
         "sortBy": "date",
@@ -380,12 +359,6 @@
         "_label": "infosec",
         "jobBoard": "naukri",
         "keyword": "information security",
-        "cities": [
-          "220",
-          "350",
-          "6",
-          "73"
-        ],
         "experience": "2",
         "freshness": "3",
         "sortBy": "date",
@@ -396,13 +369,6 @@
         "_label": "vapt",
         "jobBoard": "naukri",
         "keyword": "vapt",
-        "cities": [
-          "220",
-          "350",
-          "6",
-          "73",
-          "97"
-        ],
         "experience": "2",
         "freshness": "3",
         "sortBy": "date",
@@ -426,13 +392,6 @@
         "_label": "devsecops",
         "jobBoard": "naukri",
         "keyword": "devsecops",
-        "cities": [
-          "220",
-          "350",
-          "6",
-          "73",
-          "97"
-        ],
         "experience": "2",
         "freshness": "3",
         "sortBy": "date",
@@ -443,13 +402,6 @@
         "_label": "devops",
         "jobBoard": "naukri",
         "keyword": "devops",
-        "cities": [
-          "220",
-          "350",
-          "6",
-          "73",
-          "97"
-        ],
         "experience": "2",
         "freshness": "3",
         "sortBy": "date",
@@ -473,7 +425,7 @@
         "location": [
           "india"
         ],
-        "originLocation": "New Delhi",
+        "originLocation": "Pune",
         "radiusKm": 60,
         "experienceLevel": "entry",
         "maxResults": 25,
@@ -481,7 +433,7 @@
         "descriptionFormat": "text",
         "skipReposts": true,
         "incrementalMode": true,
-        "stateKey": "jsa-secrole-ncr"
+        "stateKey": "jsa-secrole-pune"
       },
       {
         "_label": "security-remote",
