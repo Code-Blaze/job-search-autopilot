@@ -1,0 +1,10 @@
+# your private data — never commit
+secrets.env
+config/
+output/
+logs/
+*.xlsx
+*.docx
+*.pdf
+__pycache__/
+.DS_Store

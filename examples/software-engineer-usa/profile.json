@@ -1,0 +1,99 @@
+{
+  "_help": "Your job-search rules. Every setting is explained in docs/CUSTOMIZE.md. Keywords are plain words/phrases (case-insensitive, whole words); end with * for any ending (develop*); start with re: for a raw regex.",
+
+  "name": "Your Name",
+  "field": "software engineering",
+
+  "roles": {
+    "title_keywords": [
+      "frontend", "front-end", "full-stack", "fullstack", "web developer", "web engineer",
+      "react", "javascript", "typescript", "ui engineer", "software engineer", "software developer"
+    ],
+    "title_exclude": [
+      "sales", "recruit*", "marketing", "teacher", "instructor", "tutor", "support specialist",
+      "help-desk", "intern recruiter", "clearance required", "ts/sci"
+    ],
+    "other_field_titles": [
+      "data scien*", "data engineer", "machine learning", "ml engineer", "embedded", "firmware",
+      "mechanical", "electrical", "civil", "network engineer", "sysadmin", "accountant", "nurse"
+    ],
+    "generic_titles": ["engineer", "developer", "programmer"],
+    "description_keywords": ["react", "javascript", "typescript", "css", "html", "next.js", "vue", "frontend", "front-end", "node.js"],
+    "description_min_matches": 3
+  },
+
+  "experience": {
+    "max_years_required": 4,
+    "drop_levels": ["Senior", "Exec"]
+  },
+
+  "employment": {
+    "keep_internships": false,
+    "keep_contract": true
+  },
+
+  "max_posting_age_days": 3,
+
+  "salary": {
+    "currency": "USD",
+    "minimum_per_year": 70000
+  },
+
+  "locations": {
+    "remote": "country",
+    "country_names": ["united states", "usa", "u.s."],
+    "country_codes": ["us"],
+    "country_places": [
+      "austin", "seattle", "bellevue", "redmond", "round rock", "texas", "tx", "washington", "wa",
+      "new york", "ny", "san francisco", "ca", "california", "boston", "ma", "chicago", "il",
+      "denver", "co", "atlanta", "ga"
+    ],
+    "remote_location_words": ["remote", "anywhere", "worldwide", "global"],
+    "onsite_cities": ["austin", "round rock"],
+    "hybrid_cities": ["austin", "round rock", "seattle", "bellevue", "redmond"],
+    "priority_cities": ["austin"],
+    "alternate_regions": [
+      {"id": "austin", "name": "Austin", "match": ["austin"]},
+      {"id": "seattle", "name": "Seattle", "match": ["seattle"]}
+    ]
+  },
+
+  "skills": [
+    "JavaScript", "TypeScript", "React", "Next.js", "Vue", "Angular", "Node.js", "HTML", "CSS",
+    {"name": "Tailwind", "match": ["tailwind*"]},
+    "Redux", "GraphQL",
+    {"name": "REST APIs", "match": ["rest", "restful", "rest api*"]},
+    "Jest", "Cypress", "Playwright",
+    {"name": "Testing", "match": ["unit test*", "integration test*", "end-to-end test*", "e2e"]},
+    "Webpack", "Vite", "Git", "Docker",
+    {"name": "AWS", "exact_case": true},
+    {"name": "CI/CD", "match": ["ci/cd", "continuous integration", "github actions"]},
+    {"name": "Accessibility", "match": ["accessibility", "a11y", "wcag"]},
+    "Figma", "Python", "SQL", "PostgreSQL"
+  ],
+
+  "certs": [
+    {"name": "AWS Certified", "match": ["re:\\bAWS\\s+Certified\\b"]},
+    "Scrum"
+  ],
+
+  "resume_tracks": [
+    {
+      "id": "frontend",
+      "title_keywords": ["frontend", "front-end", "ui", "react", "web"],
+      "skills": ["JavaScript", "TypeScript", "React", "Next.js", "Vue", "Angular", "HTML", "CSS", "Tailwind",
+                 "Redux", "Accessibility", "Figma", "Jest", "Cypress", "Playwright"]
+    },
+    {
+      "id": "fullstack",
+      "title_keywords": ["full-stack", "fullstack", "backend", "back-end", "node"],
+      "skills": ["Node.js", "REST APIs", "GraphQL", "SQL", "PostgreSQL", "Docker", "AWS", "CI/CD", "Python"]
+    }
+  ],
+
+  "resume": {
+    "page_size": "Letter",
+    "font": "Calibri",
+    "language": "en-US"
+  }
+}

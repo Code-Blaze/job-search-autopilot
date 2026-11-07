@@ -1,0 +1,140 @@
+{
+  "_help": "What to search, per job site. See docs/CUSTOMIZE.md. Keys starting with _ are settings for this program and are not sent to Apify. _enabled:false turns off a site or a single search. Labels ending in -remote mark remote-only searches.",
+  "linkedin": {
+    "actor": "crawlworks~linkedin-jobs-scraper",
+    "_enabled": true,
+    "_cost_usd": 0.1,
+    "_help": "~$0.10 per search (20 jobs). location is a LinkedIn location name. timePostedRange is in seconds.",
+    "runs": [
+      {
+        "_label": "frontend-austin",
+        "query": "Frontend Engineer",
+        "location": "Austin, Texas, United States",
+        "timePostedRange": "259200",
+        "jobsToFetch": 20,
+        "fullTime": true,
+        "partTime": false,
+        "entryLevel": true,
+        "associate": true,
+        "remote": true,
+        "hybrid": true,
+        "onSite": true
+      },
+      {
+        "_label": "fullstack-austin",
+        "query": "Full Stack Engineer",
+        "location": "Austin, Texas, United States",
+        "timePostedRange": "259200",
+        "jobsToFetch": 20,
+        "fullTime": true,
+        "partTime": false,
+        "entryLevel": true,
+        "associate": true,
+        "remote": true,
+        "hybrid": true,
+        "onSite": true
+      },
+      {
+        "_label": "frontend-seattle",
+        "query": "Frontend Engineer",
+        "location": "Seattle, Washington, United States",
+        "timePostedRange": "259200",
+        "jobsToFetch": 20,
+        "fullTime": true,
+        "partTime": false,
+        "entryLevel": true,
+        "associate": true,
+        "remote": true,
+        "hybrid": true,
+        "onSite": true
+      },
+      {
+        "_label": "frontend-remote",
+        "query": "Frontend Engineer",
+        "location": "United States",
+        "timePostedRange": "259200",
+        "jobsToFetch": 20,
+        "fullTime": true,
+        "partTime": false,
+        "entryLevel": true,
+        "associate": true,
+        "remote": true,
+        "hybrid": false,
+        "onSite": false
+      }
+    ]
+  },
+  "indeed": {
+    "actor": "borderline~indeed-scraper",
+    "_enabled": true,
+    "_cost_usd": 0.1,
+    "_help": "~$0.10 per search. country is a 2-letter code; radius is in miles for the US.",
+    "runs": [
+      {
+        "_label": "react-austin",
+        "country": "us",
+        "location": "Austin, TX",
+        "radius": "25",
+        "query": "React Developer",
+        "sort": "date",
+        "fromDays": "3",
+        "maxRows": 20
+      },
+      {
+        "_label": "react-seattle",
+        "country": "us",
+        "location": "Seattle, WA",
+        "radius": "25",
+        "query": "React Developer",
+        "sort": "date",
+        "fromDays": "3",
+        "maxRows": 20
+      },
+      {
+        "_label": "react-remote",
+        "country": "us",
+        "location": "remote",
+        "radius": "25",
+        "query": "React Developer",
+        "sort": "date",
+        "fromDays": "3",
+        "maxRows": 20,
+        "_enabled": false
+      }
+    ]
+  },
+  "naukri": {
+    "actor": "muhammetakkurtt~naukri-job-scraper",
+    "_enabled": false,
+    "_cost_usd": 0.006,
+    "_always_run": true,
+    "_help": "India only.",
+    "runs": []
+  },
+  "wellfound": {
+    "actor": "blackfalcondata~wellfound-scraper",
+    "_enabled": false,
+    "_cost_usd": 0.05,
+    "_help": "Startup jobs. Turn on with _enabled:true.",
+    "runs": [
+      {
+        "_label": "frontend-remote",
+        "roles": [
+          "frontend-engineer"
+        ],
+        "query": "frontend engineer",
+        "location": [
+          "united-states"
+        ],
+        "remote": true,
+        "experienceLevel": "entry",
+        "maxResults": 25,
+        "maxPages": 2,
+        "descriptionFormat": "text",
+        "skipReposts": true,
+        "incrementalMode": true,
+        "stateKey": "jsa-frontend-remote"
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "_help": "Your job-search rules. Every setting is explained in docs/CUSTOMIZE.md. Keywords are plain words/phrases (case-insensitive, whole words); end with * for any ending (forensic*); start with re: for a raw regex.",
+
+  "name": "Your Name",
+  "field": "cybersecurity",
+
+  "roles": {
+    "_help": "A job is kept if its TITLE has a title_keywords word. title_exclude always drops. other_field_titles drop unless a title_keywords word is also there. A generic title (Analyst, Engineer...) is kept if the description has description_min_matches of description_keywords.",
+    "title_keywords": [
+      "soc", "security", "cyber-security", "cyber", "infosec", "information security", "appsec",
+      "dev-sec-ops", "dev-ops", "secops", "dfir", "forensic*",
+      "incident response", "incident responder", "incident handler",
+      "threat hunt*", "threat intel*", "threat detection", "threat analyst", "detection engineer*",
+      "blue team", "vapt", "penetration", "pen-tester", "pentest*", "ethical hack*", "vulnerability",
+      "siem", "malware", "csirt", "cert-in", "red team", "iam analyst", "iam engineer", "grc"
+    ],
+    "title_exclude": [
+      "help-desk", "service desk", "desktop support", "it support", "technical support",
+      "guard", "bouncer", "watchman", "security officer", "security supervisor", "security guard",
+      "loss prevention", "cctv", "surveillance operator", "physical security", "gunman",
+      "sales", "business development", "account manager", "account executive", "inside sales",
+      "pre-sales", "marketing", "recruit*", "talent acquisition", "telecaller",
+      "social security", "security deposit", "securities",
+      "trainer", "teacher", "instructor", "faculty", "tutor", "facility", "housekeeping", "driver"
+    ],
+    "other_field_titles": [
+      "developer", "full-stack", "front-end", "back-end", "react", "angular", ".net", "java", "php",
+      "flutter", "android", "ios", "data scien*", "data analyst", "data engineer", "machine learning",
+      "ml engineer", "ui", "ux", "designer", "qa", "tester", "test engineer", "network admin*",
+      "network engineer", "system admin*", "sysadmin", "accountant", "finance", "hr", "teacher",
+      "professor", "lecturer", "content writer", "mechanical", "civil", "electrical", "sap", "salesforce"
+    ],
+    "generic_titles": [
+      "analyst", "engineer", "associate", "specialist", "consultant", "executive", "trainee",
+      "operations", "administrator", "officer"
+    ],
+    "description_keywords": [
+      "soc", "siem", "incident response", "threat hunt*", "threat intel*", "mitre", "edr",
+      "vulnerabilit*", "penetration test*", "owasp", "security operations", "malware*",
+      "re:\\bIDS\\b|\\bIPS\\b", "splunk", "sentinel", "qradar", "cyber-security", "appsec", "cloud security"
+    ],
+    "description_min_matches": 4
+  },
+
+  "experience": {
+    "_help": "Levels: Entry, Associate, Mid, Senior, Exec. max_years_required: drop jobs asking for more years than this (null = no limit).",
+    "max_years_required": 3,
+    "drop_levels": ["Senior", "Exec"]
+  },
+
+  "employment": {
+    "keep_internships": false,
+    "keep_contract": false
+  },
+
+  "max_posting_age_days": 3,
+
+  "salary": {
+    "_help": "Jobs that SHOW a salary below this (per year, in this currency) are dropped. Jobs without a salary are always kept. 0 = no minimum.",
+    "currency": "INR",
+    "minimum_per_year": 400000
+  },
+
+  "locations": {
+    "_help": "remote: country = remote jobs anywhere in your country, anywhere = any country, none = no remote jobs. Onsite (and 'Not Specified') jobs must be in onsite_cities, hybrid jobs in hybrid_cities.",
+    "remote": "country",
+    "country_names": ["india", "bharat"],
+    "country_codes": ["in"],
+    "country_places": [
+      "noida", "delhi", "gurgaon", "gurugram", "ghaziabad", "faridabad", "ncr", "bangalore", "bengaluru",
+      "mumbai", "navi mumbai", "thane", "pune", "hyderabad", "secunderabad", "chennai", "kolkata",
+      "ahmedabad", "gandhinagar", "jaipur", "chandigarh", "mohali", "lucknow", "indore", "bhopal",
+      "kochi", "cochin", "thiruvananthapuram", "trivandrum", "coimbatore", "mysore", "mysuru", "nagpur",
+      "vadodara", "surat", "bhubaneswar", "visakhapatnam", "vizag", "dehradun", "ranchi", "patna",
+      "guwahati", "goa", "karnataka", "maharashtra", "tamil nadu", "telangana", "uttar pradesh",
+      "haryana", "kerala", "gujarat", "west bengal", "rajasthan"
+    ],
+    "remote_location_words": ["remote", "anywhere", "worldwide", "global", "asia"],
+    "onsite_cities": ["noida", "greater noida", "delhi", "new delhi", "gurgaon", "gurugram", "bengaluru", "bangalore"],
+    "hybrid_cities": [
+      "delhi", "new delhi", "ncr", "noida", "greater noida", "gurgaon", "gurugram", "ghaziabad",
+      "faridabad", "manesar", "sonipat", "sonepat", "bahadurgarh", "bengaluru", "bangalore"
+    ],
+    "priority_cities": ["noida", "greater noida"],
+    "alternate_regions": [
+      {"id": "ncr", "name": "Delhi NCR", "match": ["delhi", "gurgaon", "gurugram", "noida", "ncr"]},
+      {"id": "blr", "name": "Bengaluru", "match": ["bengaluru", "bangalore"]}
+    ]
+  },
+
+  "skills": [
+    {"name": "SIEM", "exact_case": true},
+    "Splunk",
+    {"name": "ELK/Elastic", "match": ["ELK", "elastic", "elasticsearch", "elastic search", "elastic stack", "elastic siem"]},
+    {"name": "SPL", "exact_case": true},
+    {"name": "KQL", "exact_case": true},
+    "Sentinel",
+    {"name": "QRadar", "match": ["qradar", "q radar"]},
+    "Wazuh",
+    {"name": "MITRE ATT&CK", "match": ["mitre"]},
+    {"name": "Alert triage", "match": ["alert triage", "re:\\btriag\\w+\\s+(of\\s+)?alerts?\\b"]},
+    {"name": "Log analysis", "match": ["log analysis", "log correlation", "log monitoring", "log review"]},
+    {"name": "Incident response", "match": ["incident response", "incident handling", "incident management"]},
+    {"name": "Threat hunting", "match": ["threat hunt*"]},
+    {"name": "Threat intel", "match": ["threat intel*", "CTI"]},
+    {"name": "IOC", "match": ["IOC", "IOCs", "indicator of compromise", "indicators of compromise"], "exact_case": true},
+    {"name": "EDR", "match": ["EDR", "XDR"], "exact_case": true},
+    {"name": "IDS/IPS", "match": ["IDS", "IPS", "IDPS"], "exact_case": true},
+    {"name": "Malware analysis", "match": ["malware analys*"]},
+    {"name": "Forensics", "match": ["forensic*"]},
+    {"name": "VirusTotal", "match": ["virustotal", "virus total"]},
+    {"name": "Windows event logs", "match": ["windows event log", "windows event logs", "event viewer", "sysmon"]},
+    "OWASP",
+    {"name": "Burp Suite", "match": ["burp"]},
+    {"name": "DAST", "exact_case": true},
+    {"name": "SAST", "exact_case": true},
+    {"name": "API security", "match": ["api security", "api testing", "api pentest*"]},
+    {"name": "Web app security", "match": ["re:\\bweb\\s+app(lication)?s?\\s+(security|testing|pentest\\w*|penetration)\\b"]},
+    {"name": "Threat modeling", "match": ["threat model*"]},
+    {"name": "VAPT", "match": ["vapt", "vulnerability assessment"]},
+    {"name": "Pentesting", "match": ["penetration test*", "pen-test*"]},
+    "Nessus", "Nmap", "Metasploit", "Wireshark",
+    {"name": "Packet analysis", "match": ["packet analys*", "pcap", "tcpdump"]},
+    "TCP/IP",
+    {"name": "Firewall", "match": ["firewall", "firewalls"]},
+    {"name": "AWS", "exact_case": true},
+    "Azure",
+    {"name": "GCP", "match": ["GCP", "Google Cloud"], "exact_case": true},
+    "Cloud security",
+    {"name": "IAM", "exact_case": true},
+    "Python", "PowerShell", "Bash", "Linux", "Docker",
+    {"name": "Git", "match": ["git", "github", "gitlab"]}
+  ],
+
+  "certs": [
+    "eJPT", "eCTHP", "ICCA", "CEH",
+    {"name": "Security+", "match": ["re:\\bSecurity\\s?\\+|\\bSec\\+"]},
+    {"name": "CySA+", "match": ["re:\\bCySA\\+?"]},
+    "OSCP",
+    {"name": "ISC2 CC", "match": ["re:\\b(ISC2|\\(ISC\\)2)\\s+CC\\b", "certified in cybersecurity"]},
+    "CISSP", "GCIH", "AZ-500", "SC-200",
+    {"name": "AWS Security", "match": ["re:\\bAWS\\s+(Certified\\s+)?Security\\b"]},
+    "CompTIA"
+  ],
+
+  "resume_tracks": [
+    {
+      "id": "soc",
+      "title_keywords": ["soc", "siem", "incident", "threat", "dfir", "forensic*", "monitoring", "blue team",
+                         "detection", "security operations", "csirt", "cert"],
+      "skills": ["SIEM", "Splunk", "ELK/Elastic", "SPL", "KQL", "Sentinel", "QRadar", "Wazuh", "MITRE ATT&CK",
+                 "Alert triage", "Log analysis", "Incident response", "Threat hunting", "Threat intel", "IOC",
+                 "EDR", "IDS/IPS", "Malware analysis", "Forensics", "VirusTotal", "Windows event logs"]
+    },
+    {
+      "id": "appsec",
+      "title_keywords": ["app-sec", "application security", "web", "api", "pen-test*", "penetration", "vapt",
+                         "product security", "devsecops", "vulnerability"],
+      "skills": ["OWASP", "Burp Suite", "DAST", "SAST", "API security", "Web app security", "Threat modeling",
+                 "VAPT", "Pentesting", "Nessus", "Nmap", "Metasploit"]
+    }
+  ],
+
+  "resume": {
+    "page_size": "A4",
+    "font": "Times New Roman",
+    "language": "en-IN"
+  }
+}

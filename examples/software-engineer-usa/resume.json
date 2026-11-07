@@ -1,0 +1,51 @@
+{
+  "_help": "SAMPLE resume for a made-up person. Replace everything with your own, true details. The program only reorders this content for each job; it never invents anything. Fields are explained in docs/CUSTOMIZE.md.",
+  "name": "Your Name",
+  "headlines": {
+    "frontend": "Frontend Engineer | React & TypeScript | Accessible, Fast Web Apps",
+    "fullstack": "Full Stack Engineer | React, Node.js & PostgreSQL",
+    "default": "Software Engineer | React, TypeScript & Node.js"
+  },
+  "contact": [
+    {"text": "Austin, TX"},
+    {"text": "(512) 555-0100", "url": "tel:+15125550100"},
+    {"text": "you@example.com", "url": "mailto:you@example.com"},
+    {"text": "linkedin.com/in/your-profile", "url": "https://www.linkedin.com/in/your-profile"},
+    {"text": "github.com/your-username", "url": "https://github.com/your-username"}
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "org": "Example Corp",
+      "location": "Austin, TX",
+      "dates": "Jun 2022 - Sep 2026",
+      "bullets": [
+        "Built and maintained customer-facing React and TypeScript pages used by 200,000 monthly users.",
+        "Cut page load time by 35% by code-splitting with Vite and lazy-loading images.",
+        "Added Jest and Playwright tests that raised coverage from 40% to 75% and caught regressions in CI/CD.",
+        "Wrote Node.js REST APIs backed by PostgreSQL for the account settings area."
+      ]
+    }
+  ],
+  "skills": [
+    {"track": "frontend", "label": "Frontend", "items": ["React", "TypeScript", "JavaScript", "Next.js", "HTML", "CSS", "Tailwind", "Redux", "accessibility (WCAG)"]},
+    {"track": "fullstack", "label": "Backend", "items": ["Node.js", "REST APIs", "GraphQL", "PostgreSQL", "SQL"]},
+    {"label": "Tools", "items": ["Git", "Docker", "AWS", "GitHub Actions (CI/CD)", "Jest", "Playwright", "Figma"]}
+  ],
+  "projects": [
+    {
+      "name": "Budget Planner",
+      "tech": "Next.js, PostgreSQL",
+      "url": "https://github.com/your-username/budget-planner",
+      "bullets": ["Open-source budgeting app with server-rendered Next.js pages and a PostgreSQL database."]
+    }
+  ],
+  "certifications": [],
+  "achievements": [],
+  "education": [
+    {"school": "Example State University", "dates": "2018 - 2022", "degree": "B.S. Computer Science", "bullets": []}
+  ],
+  "section_order": {
+    "default": ["experience", "skills", "projects", "education", "certifications", "achievements"]
+  }
+}

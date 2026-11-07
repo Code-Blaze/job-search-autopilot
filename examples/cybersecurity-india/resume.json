@@ -1,0 +1,64 @@
+{
+  "_help": "SAMPLE resume for a made-up person. Replace everything with your own, true details. The program only reorders this content for each job; it never invents anything. Fields are explained in docs/CUSTOMIZE.md.",
+  "name": "Your Name",
+  "headlines": {
+    "soc": "Cybersecurity Analyst | SOC Operations | Threat Hunting & Incident Response",
+    "appsec": "Application Security | Web & API Testing | Vulnerability Assessment",
+    "default": "Cybersecurity Analyst | Security Operations & Application Security"
+  },
+  "contact": [
+    {"text": "Noida, India"},
+    {"text": "+91 90000 00000", "url": "tel:+919000000000"},
+    {"text": "you@example.com", "url": "mailto:you@example.com"},
+    {"text": "linkedin.com/in/your-profile", "url": "https://www.linkedin.com/in/your-profile"},
+    {"text": "github.com/your-username", "url": "https://github.com/your-username"}
+  ],
+  "experience": [
+    {
+      "title": "SOC Analyst Intern",
+      "org": "Example Security Pvt Ltd",
+      "location": "Noida",
+      "dates": "Jan 2025 - Jun 2025",
+      "bullets": [
+        "Monitored and triaged 40+ SIEM alerts per shift in Splunk, escalating confirmed incidents with documented evidence.",
+        "Wrote SPL queries to correlate firewall, EDR and Windows event logs during incident investigations.",
+        "Enriched indicators of compromise with VirusTotal and threat-intel feeds, mapping activity to MITRE ATT&CK."
+      ]
+    }
+  ],
+  "skills": [
+    {"track": "soc", "label": "Security Operations", "items": ["SIEM (Splunk, ELK)", "SPL and KQL queries", "alert triage", "log correlation", "threat hunting", "MITRE ATT&CK", "incident response"]},
+    {"track": "appsec", "label": "Application Security", "items": ["OWASP Top 10", "Burp Suite", "API security testing", "Nmap", "Nessus", "vulnerability assessment"]},
+    {"label": "Tools & Languages", "items": ["Python", "Bash", "PowerShell", "Linux", "Wireshark", "Git", "Docker"]}
+  ],
+  "projects": [
+    {
+      "name": "Home SOC Lab",
+      "tech": "Wazuh, Sysmon, Splunk",
+      "url": "https://github.com/your-username/home-soc-lab",
+      "bullets": [
+        "Built a home lab forwarding Sysmon and Windows event logs to Wazuh and Splunk for detection practice.",
+        "Wrote detection rules for brute-force and persistence techniques and tested them with simulated attacks."
+      ]
+    },
+    {
+      "name": "Web App Security Assessment",
+      "tech": "Burp Suite, OWASP ZAP",
+      "bullets": [
+        "Tested an intentionally vulnerable web app against the OWASP Top 10 and wrote a findings report with fixes."
+      ]
+    }
+  ],
+  "certifications": ["CompTIA Security+", "eJPT (eLearnSecurity Junior Penetration Tester)"],
+  "achievements": [
+    {"text": "Top 5% on TryHackMe (profile)", "link_text": "profile", "url": "https://tryhackme.com/p/your-username"}
+  ],
+  "education": [
+    {"school": "Example University", "dates": "2020 - 2024", "degree": "B.Tech, Computer Science", "bullets": []}
+  ],
+  "section_order": {
+    "soc": ["experience", "skills", "certifications", "projects", "achievements", "education"],
+    "appsec": ["experience", "skills", "certifications", "projects", "achievements", "education"],
+    "default": ["experience", "skills", "achievements", "education", "certifications", "projects"]
+  }
+}
