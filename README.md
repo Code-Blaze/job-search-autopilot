@@ -34,7 +34,7 @@ It searches **LinkedIn, Indeed, Naukri** (India) and **Wellfound** (startups) th
 | This program | Free |
 | Apify | **Free plan: $5 of credit every month.** A LinkedIn or Indeed search is about $0.10; Naukri is under $0.01. The program paces itself so it never runs out mid-month (see [Costs](#costs-and-the-free-apify-credit)). |
 | Telegram | Free (optional) |
-| AI resume rewrite | Optional, pay-per-use with an Anthropic API key, a few cents per day |
+| AI resume rewrite | Optional. Needs an Anthropic **API key** (pay-per-use; a Claude Pro/Max chat subscription does not include API use). Roughly $0.05–0.12 per resume, about $5–10/month for 3 a day. Without a key, the free rule-based resumes are used. |
 
 ## What you need
 
@@ -152,8 +152,10 @@ a warning if a search failed or your Apify credit is low.
 
 ### AI-rewritten resume for the top 3 jobs
 
-Put an Anthropic API key ([console.anthropic.com](https://console.anthropic.com)) in `secrets.env`
-and run `python3 -m pip install --user anthropic`. Each rewritten line is checked against your real
+Put an Anthropic API key ([console.anthropic.com](https://console.anthropic.com), billed separately
+from any Claude chat subscription) in `secrets.env` and run `python3 -m pip install --user anthropic`.
+It costs roughly $0.05–0.12 per resume; set the environment variable `AI_TAILOR_TOP_N=1` to rewrite
+only the top job (the run log prints the actual cost each day). Each rewritten line is checked against your real
 resume and thrown away if it adds a number, tool, certification, employer or seniority claim
 ("led", "managed"...) that isn't already there. What the job asks for that your resume lacks goes
 into the Notes column, for interview prep. Without a key, the free rule-based resumes are used.
