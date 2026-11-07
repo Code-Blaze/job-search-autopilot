@@ -171,8 +171,9 @@ into the Notes column, for interview prep. Without a key, the free rule-based re
 - **Several cities?** List them under `alternate_regions` in `profile.json` and each city's paid
   searches run on its own days (e.g. even dates Pune, odd dates Hyderabad), so each city is
   covered every other day instead of one city crowding out the other.
-- You can add backup tokens (`APIFY_TOKEN_2`, ...) from other Apify accounts; they're used when
-  the first runs out. Please follow Apify's terms when doing this.
+- Need more searches? Upgrade your Apify plan, or add a second token (`APIFY_TOKEN_2`, e.g. from
+  a paid plan or a team account); it's used when the first runs out. Don't open extra free
+  accounts to get around the free limit; check Apify's terms.
 - Find weak searches (ones that never produce a job you keep) and turn them off with
   `"_enabled": false` in `searches.json`; that frees credit for the good ones.
 
@@ -202,6 +203,12 @@ matching setting in `profile.json`. Old days can be re-checked for free with
 They're in `.gitignore`, so they're never committed if you fork this repo.
 
 More: [docs/OPERATIONS.md](docs/OPERATIONS.md) (logs, re-runs, budget, troubleshooting).
+
+## Responsible use
+
+This tool is for **your own job search**, at a small personal scale: a few searches a day, read by
+you. Please don't use it to collect job listings in bulk, build a database of them, or resell the
+data, and keep the number of searches modest.
 
 ## Contributing
 
